@@ -1,0 +1,23 @@
+{
+    "name": "autokommentar-helper-elaws",
+    "version": "0.0.1",
+    "description": "Add AutoKommentar function to e-Gov law search",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://laws.e-gov.go.jp/*"
+            ],
+            "js": [
+                "main.js"
+            ],
+            "all_frames": true
+        }
+    ],
+    "content_security_policy": {}
+}
